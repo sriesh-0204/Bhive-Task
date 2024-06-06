@@ -1,0 +1,11 @@
+@import "../../stylesheet/variable.scss";
+
+.header {
+    background-color: $white;
+
+    &-call-icon {
+        border: 1px solid $yellow-primary-one;
+        padding: 5px;
+        border-radius: 2px;
+    }
+}
