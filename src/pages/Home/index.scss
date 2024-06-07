@@ -1,0 +1,140 @@
+@import "../../stylesheet/variable.scss";
+
+.main {
+
+    // .border-bottom-right {
+    //     border-bottom: 1px solid #000;
+    //     border-right: 1px solid #000;
+    //   }
+
+    &-space {
+
+        &-pass-day{
+            background-color: $gray-two;
+            margin-right: 6px;
+        }
+
+        &-pass-bulk{
+            background-color: $yellow-primary-two;
+        }
+
+        &-list {
+            background-color: $white;
+        }
+
+        &-image {
+            position: relative;
+
+            img {
+                width: 346px;
+                height: 202px;
+                border-radius: 4px;
+            }
+
+            &-attach {
+                background-color: rgba(38, 50, 56, 1);
+                width: 30%;
+                color: $yellow-primary-one;
+                font-size: 14px;
+                font-weight: 400;
+                font-family: "Inter", sans-serif;
+                line-height: 16.94px;
+                position: absolute;
+                top: 18px;
+                left: 16px;
+                border-radius: 4px;
+
+                img {
+                    width: 14px;
+                    height: 14px;
+                }
+            }
+        }
+
+        &-km {
+            background-color: $gray-one;
+            border-radius: 4px;
+
+            img {
+                width: 18px;
+                height: 18px;
+                margin: 0 auto;
+            }
+
+            p {
+                font-size: 8px;
+                font-family: "Inter", sans-serif;
+                font-weight: 600;
+                line-height: 9.86px;
+
+            }
+        }
+    }
+
+    &-banner {
+        background-image: url("../../assets/images/background.svg");
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+
+        &-prize {
+            color: $yellow-primary-one;
+        }
+    }
+
+    &-download {
+        &-image {
+            position: absolute;
+            left: 20px;
+            bottom: 0;
+        }
+
+        &-text {
+            background-color: $white;
+            padding: 40px 0;
+            position: relative;
+            margin-top: 250px;
+
+            @media only screen and (max-width: 768px) {
+                margin-top: 180px;
+                margin-bottom: 60px;
+            }
+        }
+    }
+
+    &-left-text {
+        width: 42%;
+
+        @media only screen and (max-width: 768px) {
+            h4 {
+                display: none;
+            }
+        }
+    }
+
+    &-choose {
+
+        &-list {
+            img {
+                width: 32px;
+                height: 32px;
+            }
+
+            @media only screen and (max-width: 768px) {
+                background-color: $white;
+            }
+
+        }
+    }
+
+    &-playstore {
+        @media only screen and (max-width: 768px) {
+            position: relative;
+            top: 8rem;
+            left: 2rem;
+        }
+
+    }
+}
