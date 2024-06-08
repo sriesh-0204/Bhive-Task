@@ -9,10 +9,10 @@ const Header: React.FC = () => {
       <div className='header-container mx-8 lg:mx-40  py-3 lg:py-6 '>
         <div className='header-menu flex justify-between content-center'>
           <div className='header-logo'>
-            <img src={LogoIcon} />
+            <img src={LogoIcon} alt='' />
           </div>
           <div className='header-call-icon flex content-center'>
-           <img src={CallIcon} />
+           <img src={CallIcon} alt='' />
           </div>
         </div>
       </div>

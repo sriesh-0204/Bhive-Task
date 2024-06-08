@@ -7,15 +7,55 @@
     //     border-right: 1px solid #000;
     //   }
 
+    &-banner-section{
+
+        &-div{
+            @media only screen and (max-width: 768px) {
+               width: unset;
+             }
+        }
+        @media only screen and (max-width: 768px) {
+           flex-direction: column-reverse;
+           h1{
+            line-height: 24.2px;
+           }
+        }
+    }
+
+
     &-space {
 
-        &-pass-day{
+        &-arrow-image {
+            width: 14px;
+            height: 14px;
+        }
+
+        span {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        &-pass-day {
             background-color: $gray-two;
             margin-right: 6px;
         }
 
-        &-pass-bulk{
+        &-pass-bulk {
             background-color: $yellow-primary-two;
+            position: relative;
+            
+            &-discount {
+                position: absolute;
+                padding: 4px 6px;
+                top: -10px;
+                left: 56px;
+                border-radius: 4px;
+                background-color: $black-one;
+                font-size: 8px;
+                font-family: "Inter", sans-serif;
+                line-height: 9.68px;
+                color: $white-one;
+            }
         }
 
         &-list {
