@@ -7,18 +7,20 @@
     //     border-right: 1px solid #000;
     //   }
 
-    &-banner-section{
+    &-banner-section {
 
-        &-div{
+        &-div {
             @media only screen and (max-width: 768px) {
-               width: unset;
-             }
+                width: unset;
+            }
         }
+
         @media only screen and (max-width: 768px) {
-           flex-direction: column-reverse;
-           h1{
-            line-height: 24.2px;
-           }
+            flex-direction: column-reverse;
+
+            h1 {
+                line-height: 24.2px;
+            }
         }
     }
 
@@ -43,7 +45,7 @@
         &-pass-bulk {
             background-color: $yellow-primary-two;
             position: relative;
-            
+
             &-discount {
                 position: absolute;
                 padding: 4px 6px;
@@ -60,6 +62,14 @@
 
         &-list {
             background-color: $white;
+            width: 30%;
+            margin-right: 50px;
+            margin-bottom: 40px;
+
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+                margin-right: 0px;
+            }
         }
 
         &-image {
@@ -164,6 +174,10 @@
 
             @media only screen and (max-width: 768px) {
                 background-color: $white;
+                margin-right: 12px;
+                padding: 24px 0px;
+                border-radius: 8px;
+                width: 46%;
             }
 
         }
