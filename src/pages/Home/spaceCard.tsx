@@ -9,7 +9,6 @@ import { spacelistRequest } from '../../redux/slices/spaceListSlice';
 
 const SpaceCard: React.FC = () => {
   const apiData = useSelector((state: RootState)=>state.spaceList.data)
-  console.log(apiData)
   const dispatch = useAppDispatch()
 
   React.useEffect(()=>{
@@ -19,11 +18,11 @@ const SpaceCard: React.FC = () => {
   return <div className='main-space flex  flex-wrap  md:flex-row w-full'>
     {
       apiData.map((item,index)=>(
-        <div className='main-space-list w-1 lg:w-1/3 p-4 rounded-md'>
+        <div className='main-space-list w-1 md:w-1/4 lg:w-1/3 p-4 rounded-md'>
         <div className='main-space-title flex justify-between'>
           <div className='basis-1/1'>
             <h4>{item.name}</h4>
-          </div>
+          </div>consol
           <div className='basis-1/2 flex justify-end'>
             <div className='main-space-km p-3'>
               <img src={Direction} alt='Direction' />

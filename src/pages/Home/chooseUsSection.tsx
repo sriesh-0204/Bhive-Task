@@ -12,7 +12,7 @@ const ChooseUsSection: React.FC = () => (
             className={`main-choose-list flex flex-col items-center lg:items-start lg:flex-row md:flex  lg:basis-1/4 my-6 ${index < 4 ? 'border-bottom-right' : ''}`}
           >
             <img src={feature.icon} alt={feature.title} />
-            <h5 className='ps-6 flex items-center'>{feature.title}</h5>
+            <h5 className='ps-0 lg:ps-6 flex items-center'>{feature.title}</h5>
           </div>
         ))}
       </div>
